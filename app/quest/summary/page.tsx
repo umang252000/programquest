@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import html2pdf from "html2pdf.js";
 import { useLFA } from "@/context/LFAContext";
 import { generateFeedback } from "@/logic/lfaFeedback";
 
@@ -50,12 +49,17 @@ function Section({
 export default function SummaryPage() {
   const { data } = useLFA();
 
-  // ✅ Generate rule-based feedback
+  // Rule-based (AI-like) feedback
   const feedback = generateFeedback(data);
 
-  function exportPDF() {
+  // ✅ Browser-only PDF export (build-safe)
+  async function exportPDF() {
+    if (typeof window === "undefined") return;
+
     const element = document.getElementById("lfa-summary");
     if (!element) return;
+
+    const html2pdf = (await import("html2pdf.js")).default;
 
     html2pdf()
       .set({
@@ -118,7 +122,7 @@ export default function SummaryPage() {
           {/* ---------------- FEEDBACK SECTION ---------------- */}
           <section className="mt-10 border-t pt-6">
             <h2 className="text-xl font-bold mb-4">
-              Program Feedback
+              🧠 Program Feedback
             </h2>
 
             <ul className="space-y-3">
