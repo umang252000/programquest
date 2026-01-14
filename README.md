@@ -222,7 +222,7 @@ This option is suitable for reviewers who do not use Git.
 
 ### Option B: Clone Using Git
 ```bash
-git clone https://github.com/your-username/programquest.git
+git clone https://github.com/umang252000/programquest.git
 cd programquest
 ```
 ## 3. Prerequisites to Run the Project Locally
