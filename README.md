@@ -192,3 +192,127 @@ Team Members:
 ProgramQuest is a step toward making program design a shared capability, not an exclusive skill—strengthening systems that ultimately impact millions of learners.
 
 Designing better programs leads to better systems. Better systems lead to better education.
+
+
+# INSTRUCTIONS — ProgramQuest
+
+This section explains how to access, run, and evaluate the ProgramQuest prototype, including GitHub usage and local execution steps.
+
+## 1. Accessing the Project Source Code (GitHub)
+
+- Open the public GitHub repository link provided in the Project Source field
+(Example: https://github.com/your-username/programquest)
+
+The repository contains:
+
+- Full source code
+- README documentation
+- Modular project structure
+- Commit history showing original development
+
+## 2. Downloading the Project from GitHub
+### Option A: Download ZIP (No Git Required)
+
+- Open the GitHub repository
+- Click the Code (green button)
+- Select Download ZIP
+- Extract the ZIP file on your system
+
+This option is suitable for reviewers who do not use Git.
+
+### Option B: Clone Using Git
+```bash
+git clone https://github.com/your-username/programquest.git
+cd programquest
+```
+## 3. Prerequisites to Run the Project Locally
+
+Ensure the following are installed:
+
+- Node.js (version 18 or above recommended)
+- npm (comes with Node.js)
+- A modern web browser (Chrome / Edge / Firefox)
+
+Check installation:
+```bash
+node -v
+npm -v
+```
+
+## 4. Installing Dependencies
+After downloading or cloning the repository:
+```bash
+npm install
+```
+This command installs all required dependencies listed in package.json.
+
+## 5. Running the Application Locally
+
+Start the development server:
+```bash
+npm run dev
+```
+Once the server starts, you will see an output similar to:
+```bash
+Local: http://localhost:3000
+```
+## 6. Accessing the Application
+
+- Open a web browser
+- Visit:
+```bash
+http://localhost:3000
+```
+The ProgramQuest Home Page will load.
+
+## 7. How to Use the Application (Demo Flow)
+
+The application is designed as a guided, gamified journey.
+
+##### Step-by-step Demo Walkthrough:
+
+###### 1.Click “Start the Quest”
+
+###### 2.Level 1 – Define Problem
+
+- Enter the system-level education problem
+- Minimum clarity required to proceed
+
+###### 3.Level 2 – Select Outcomes
+
+- Choose desired student/system outcomes
+- Multiple selections allowed
+
+###### 4.Level 3 – Map Stakeholders
+- Identify key actors across the education system
+
+###### 5.Level 4 – Choose Interventions
+
+- Select interventions aligned with outcomes
+- Logic checks ensure relevance
+
+###### 6.Level 5 – Define Indicators
+- Choose measurable indicators for success
+
+###### 7.Summary Page
+- View the generated review-ready Logical Framework
+- Designed for funders, partners, and internal review
+
+If any required element is missing, the system displays logic validation warnings and prevents progression.
+
+## 8. Logic Validation & Reliability
+
+- The system uses a rule-based logic engine
+- Dependencies are enforced:
+- Outcomes required before interventions
+- Indicators required before completion
+- Validation messages explain what is missing
+ -Ensures logical consistency and completeness
+
+### 9. Notes
+
+- This prototype demonstrates end-to-end program design logic
+- Export to PDF/DOCX is planned in future iterations
+- Architecture is modular and scalable
+- The solution aligns with Common Logical Framework principles
+- Designed to be open-source and ecosystem-ready
