@@ -1,6 +1,8 @@
 # 🚀 ProgramQuest
 #### Gamified Logical Framework Builder for NGOs
 
+<img width="1536" height="1024" alt="ChatGPT Image Jan 12, 2026, 07_36_30 PM" src="https://github.com/user-attachments/assets/715701dc-c630-46b9-9f8a-f9d5df94c297" />
+
 ## Overview
 ProgramQuest is a gamified, step-by-step digital platform that helps education-focused NGOs and CSOs design clear, coherent, and review-ready program frameworks—without relying on expensive consultants or starting from a blank page.
 
